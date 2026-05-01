@@ -1,0 +1,154 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+
+  .header-inner {
+    @include m.inner;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @include m.sp {
+      height: 70px;
+    }
+  }
+
+  .header-logo {
+    a {
+      display: block;
+    }
+
+    img {
+      height: 40px;
+      width: auto;
+      display: block;
+      margin-top: 6px;
+    }
+
+    @include m.sp {
+      img {
+        height: 42px;
+      }
+    }
+  }
+
+  .header-nav {
+    @include m.sp {
+      position: fixed;
+      inset: 0;
+      background: rgba(247, 250, 252, 0.95);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 120px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+      z-index: 110;
+    }
+
+    .nav-list {
+      display: flex;
+      gap: 28px;
+
+      @include m.sp {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        transform: translateY(10px);
+        transition: transform 0.35s ease;
+      }
+
+      li {
+        a {
+          font-size: 14px;
+          color: v.$main-color;
+          letter-spacing: 0.08em;
+          line-height: 1.2;
+
+          @include m.sp {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .menu-btn {
+    display: none;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 120;
+
+    @include m.sp {
+      display: block;
+    }
+
+    span {
+      position: absolute;
+      left: 8px;
+      width: 26px;
+      height: 1.5px;
+      background-color: v.$main-color;
+      border-radius: 999px;
+      transition: 0.3s ease;
+    }
+
+    span:nth-child(1) {
+      top: 12px;
+    }
+
+    span:nth-child(2) {
+      top: 20px;
+    }
+
+    span:nth-child(3) {
+      top: 28px;
+    }
+  }
+
+  @include m.sp {
+    &.open {
+      .header-nav {
+        opacity: 1;
+        visibility: visible;
+        height: 100vh;
+      }
+
+      .nav-list {
+        transform: translateY(0);
+      }
+
+      .menu-btn {
+        span:nth-child(1) {
+          top: 20px;
+          transform: rotate(45deg);
+        }
+
+        span:nth-child(2) {
+          opacity: 0;
+        }
+
+        span:nth-child(3) {
+          top: 20px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

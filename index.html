@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hikari Creative Lab | ポートフォリオ</title>
+  <meta name="description" content="Hikari Creative Labのポートフォリオサイトです。見る人の心に光を灯すお手伝いをコンセプトに、やさしく見やすいWebデザインを制作しています。">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="header-logo">
+                <a href="#top">
+                    <img src="img/logo.png" alt="hikari creative lab ロゴ">
+                </a>
+            </h1>
+
+            <nav class="header-nav">
+                <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#flow">Flow</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" id="menubtn" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- fv -->
+        <section class="fv" id="top">
+            <canvas id="orbCanvas"></canvas>
+            <div class="fv-inner">
+                <p class="fv-copy typing fade-up"></p>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="about section fade-up" id="about">
+            <div class="section-inner">
+                <h2 class="section-title en">About</h2>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                        1983年大阪市生まれ。<br>
+                        小さい頃は大阪の下町で育ちました。
+                        </p>
+
+                        <p>
+                        誰かのためになる仕事がしたいという想いから、
+                        視能訓練士、警察官として人に寄り添う仕事を経験してきました。
+                        </p>
+
+                        <p>
+                        結婚、出産を経て専業主婦となりましたが、
+                        「誰かの役に立ちたい」という気持ちは変わらず、
+                        さまざまなことを調べる中でWebデザインとプログラミングに出会いました。
+                        </p>
+
+                        <p>
+                        現在は、やさしく、見やすく、伝わるデザインを大切にしながら、
+                        Web制作を行っています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- service -->
+        <section class="service section fade-up" id="service">
+            <div class="section-inner">
+                <h2 class="section-title en">Service</h2>
+
+                <div class="service-list">
+                    <article class="service-item">
+                        <h3 class="service-title en">Web Design</h3>
+                        <p class="service-text">
+                        やさしく、見やすく、伝わるデザインを心がけ、
+                        お客様の想いや魅力がしっかり届くWebサイトを制作します。
+                        </p>
+                    </article>
+
+                    <article class="service-item">
+                        <h3 class="service-title en">Coding</h3>
+                        <p class="service-text">
+                        HTML / CSS / SASS / JavaScriptを使用し、
+                        デザインを丁寧に形にしたWebサイトを制作します。
+                        </p>
+                    </article>
+
+                    <article class="service-item">
+                        <h3 class="service-title en">Tools</h3>
+                        <p class="service-text">
+                        Illustrator、Figmaを使用し、
+                        ロゴ制作やサイトデザインの作成にも対応しています。
+                        </p>
+                    </article>
+                </div>
+
+                <div class="skills">
+                    <h3 class="skills-title en">Skills</h3>
+                    <ul class="skills-list">
+                        <li>HTML / CSS / SASS</li>
+                        <li>JavaScript</li>
+                        <li>Illustrator</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- works -->
+        <section class="works section fade-up" id="works">
+            <div class="section-inner">
+                <h2 class="section-title en">Works</h2>
+
+                <div class="works-list">
+
+                    <article class="works-item">
+                        <a href="https://yuzumama01050106.github.io/sumibiyakitori_achan/" class="works-link" target="_blank" rel="noopener noreferrer">
+                        <div class="works-image">
+                            <img src="img/yakitori_site_sample.jpg" alt="焼き鳥店サイトの制作実績">
+                        </div>
+                        <div class="works-body">
+                            <h3 class="works-title">焼き鳥店オリジナルサイト</h3>
+                            <p class="works-text">
+                            飲食店を想定して制作したオリジナルサイトです。<br>
+                            温かみや親しみやすさを大切にしながら、
+                            お店の魅力がしっかり伝わるデザインを意識しました。
+                            </p>
+                        </div>
+                        </a>
+                    </article>
+
+                    <article class="works-item">
+                        <a href="#" class="works-link" target="_blank" rel="noopener noreferrer">
+                        <div class="works-image">
+                            <img src="img/portfolio_site_sample.jpg" alt="ポートフォリオサイトの制作実績">
+                        </div>
+                        <div class="works-body">
+                            <h3 class="works-title">ポートフォリオサイト</h3>
+                            <p class="works-text">
+                            自身の活動や想いを伝えるために制作したポートフォリオサイトです。<br>
+                            「光」をテーマに、やさしさと誠実さが伝わる構成を意識しました。
+                            </p>
+                        </div>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- flow -->
+        <section class="flow section fade-up" id="flow">
+            <div class="section-inner">
+                <h2 class="section-title en">Flow</h2>
+
+                <ol class="flow-list">
+                    <li class="flow-item">
+                        <h3 class="flow-title">01. ヒアリング</h3>
+                        <p class="flow-text">
+                        ご希望やお悩み、ご依頼の目的を丁寧にお伺いします。
+                        </p>
+                    </li>
+
+                    <li class="flow-item">
+                        <h3 class="flow-title">02. ご提案</h3>
+                        <p class="flow-text">
+                        ヒアリング内容をもとに、サイト構成や方向性をご提案します。
+                        </p>
+                    </li>
+
+                    <li class="flow-item">
+                        <h3 class="flow-title">03. 制作</h3>
+                        <p class="flow-text">
+                        デザインからコーディングまで、一つひとつ丁寧に制作します。
+                        </p>
+                    </li>
+
+                    <li class="flow-item">
+                        <h3 class="flow-title">04. 修正</h3>
+                        <p class="flow-text">
+                        ご確認いただきながら、必要に応じて修正対応を行います。
+                        </p>
+                    </li>
+
+                    <li class="flow-item">
+                        <h3 class="flow-title">05. 納品</h3>
+                        <p class="flow-text">
+                        完成後、最終確認を経て納品いたします。
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact section fade-up" id="contact">
+            <div class="section-inner">
+                <h2 class="section-title en">Contact</h2>
+
+                <p class="contact-message">
+                ご相談やご依頼など、お気軽にお問い合わせください。<br>
+                小さなご相談からでも大歓迎です。
+                </p>
+
+                <div class="contact-links">
+                    <a href="contact.html" class="contact-btn">お問い合わせフォーム</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- instagram -->
+        <section class="instagram section fade-up" id="instagram">
+            <div class="section-inner">
+                <h2 class="section-title en">Instagram</h2>
+
+                <p class="instagram-text">
+                制作のことや日々の活動について発信していきます。
+                </p>
+
+                <div class="instagram-link-wrap">
+                    <a href="#">
+                        準備中です
+                    </a>
+                    <!-- <a href="https://www.instagram.com/hikari_creative_lab?igsh=MTFkMWJhMWY3NGU0bA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="instagram-link"> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Hikari Creative Lab</p>
+      <p class="footer-copy">&copy; 2026 Hikari Creative Lab All Rights Reserved.</p>
+    </div>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

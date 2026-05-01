@@ -1,0 +1,49 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+.works {
+  .works-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @include m.sp {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .works-item {
+    background-color: v.$white;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid v.$border-color;
+    box-shadow: 0 8px 24px rgba(44, 95, 158, 0.05);
+  }
+
+  .works-link {
+    display: block;
+    height: 100%;
+  }
+
+  .works-image {
+    img {
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+  }
+
+  .works-body {
+    padding: 24px;
+  }
+
+  .works-title {
+    margin-bottom: 14px;
+    font-size: clamp(20px, 2vw, 26px);
+    color: v.$main-color;
+  }
+
+  .works-text {
+    font-size: v.$text-size;
+    color: v.$sub-text-color;
+  }
+}

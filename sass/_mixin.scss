@@ -1,0 +1,18 @@
+$pc: 768px;
+
+@mixin sp {
+  @media screen and (max-width: $pc) {
+    @content;
+  }
+}
+
+@mixin inner {
+  width: min(90%, 1100px);
+  margin: 0 auto;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Hikari Creative Lab</title>
+  <meta name="description" content="Hikari Creative Labへのお問い合わせページです。Webデザイン・コーディングのご相談を受け付けています。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="header-logo">
+        <a href="index.html#top">
+          <img src="img/logo.png" alt="Hikari Creative Lab ロゴ">
+        </a>
+      </h1>
+
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#service">Service</a></li>
+          <li><a href="index.html#works">Works</a></li>
+          <li><a href="index.html#flow">Flow</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#instagram">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-fv">
+      <div class="contact-fv-inner">
+        <p class="contact-fv-sub">Contact</p>
+        <p class="contact-fv-text">
+          ご相談やご依頼など、お気軽にお問い合わせください。<br>
+          小さなご相談からでも大歓迎です。
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="contact-form-inner">
+        <form action="https://formspree.io/f/xkoywawl" method="POST" class="contact-form">
+          <input type="hidden" name="_subject" value="お問い合わせが届きました">
+          <input type="text" name="_gotcha" style="display:none">
+          <input type="hidden" name="_redirect" value="https://yuzumama01050106.github.io/hikari_creativelab/thanks.html">
+          
+          <div class="form-item">
+            <label for="name">お名前<span class="required">必須</span></label>
+            <input type="text" id="name" name="name" placeholder="例：大江 慶子" required>
+          </div>
+
+          <div class="form-item">
+            <label for="company">会社名・屋号</label>
+            <input type="text" id="company" name="company" placeholder="例：Hikari Creative Lab">
+          </div>
+
+          <div class="form-item">
+            <label for="email">メールアドレス<span class="required">必須</span></label>
+            <input type="email" id="email" name="email" placeholder="例：example@gmail.com" required>
+          </div>
+
+          <div class="form-item">
+            <label for="type">お問い合わせ種別</label>
+            <select id="type" name="type">
+              <option value="">選択してください</option>
+              <option value="website">Webサイト制作について</option>
+              <option value="lp">LP制作について</option>
+              <option value="design">デザインについて</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+
+          <div class="form-item">
+            <label for="message">お問い合わせ内容<span class="required">必須</span></label>
+            <textarea id="message" name="message" rows="8" placeholder="ご相談内容をご記入ください。" required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit">送信する</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Hikari Creative Lab</p>
+      <p class="footer-copy">&copy; 2026 Hikari Creative Lab All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

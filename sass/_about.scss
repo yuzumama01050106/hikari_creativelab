@@ -1,0 +1,21 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+.about {
+  .about-content {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    p {
+      font-size: v.$text-size;
+      margin-bottom: 24px;
+      color: v.$text-color;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

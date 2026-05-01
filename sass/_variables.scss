@@ -1,0 +1,25 @@
+@use 'mixin' as m;
+
+
+$base-color: #FFF9F7;
+$main-color: #A8C3A0;
+$accent-color: #E9AFA3;
+$text-color: #5A5A5A;
+$sub-text-color: #666666;
+$white: #FFFFFF;
+$border-color: #D9E2EC;
+$bg-soft: #EDF4FA;
+
+$font-base: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+$font-en: "Georgia", "Times New Roman", serif;
+
+$inner-width: 1100px;
+$transition: 0.3s ease;
+
+$title-size: clamp(28px, 4vw, 42px);
+$sub-title-size: clamp(20px, 2.5vw, 28px);
+$text-size: clamp(15px, 1.6vw, 16px);
+$copy-size: clamp(20px, 5vw, 40px);
+
+$section-padding: 100px;
+$sp-section-padding: 70px;

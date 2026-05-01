@@ -1,0 +1,24 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+.footer {
+  padding: 10px 0;
+  background-color: v.$main-color;
+  color: v.$white;
+
+  .footer-inner {
+    @include m.inner;
+    text-align: center;
+  }
+
+  .footer-logo {
+    // margin-bottom: 5px;
+    font-size: clamp(15px, 2vw, 20px);
+    font-family: v.$font-en;
+  }
+
+  .footer-copy {
+    font-size: 10px;
+    opacity: 0.9;
+  }
+}

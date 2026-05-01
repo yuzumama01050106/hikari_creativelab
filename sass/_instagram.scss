@@ -1,0 +1,33 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+.instagram {
+  background: linear-gradient(180deg, #ffffff 0%, #edf4fa 100%);
+
+  .instagram-text {
+    margin-bottom: 28px;
+    text-align: center;
+    font-size: v.$text-size;
+    color: v.$sub-text-color;
+  }
+
+  .instagram-link-wrap {
+    text-align: center;
+  }
+
+  .instagram-link {
+    display: inline-block;
+    padding: 14px 24px;
+    border: 1px solid v.$main-color;
+    // border-radius: 999px;
+    color: v.$main-color;
+    background-color: transparent;
+    transition: all v.$transition;
+
+    &:hover {
+      background-color: v.$main-color;
+      color: v.$white;
+      opacity: 1;
+    }
+  }
+}

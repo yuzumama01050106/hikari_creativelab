@@ -1,0 +1,138 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+.contact-page {
+  padding-top: 80px;
+}
+
+.contact-fv {
+  padding: 100px 0 60px;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5fb 100%);
+
+  .contact-fv-inner {
+    width: min(90%, 900px);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-fv-sub {
+    margin-bottom: 0px;
+    font-size: v.$title-size;
+    font-family: v.$font-en;
+    color: v.$main-color;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    @include m.sp {
+      margin-bottom: 35px;
+    }
+  }
+
+  .contact-fv-text {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #555;
+  }
+}
+
+.contact-form-section {
+  padding: 80px 0 100px;
+}
+
+.contact-form-inner {
+  width: min(90%, 760px);
+  margin: 0 auto;
+}
+
+.contact-form {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(44, 95, 158, 0.12);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(44, 95, 158, 0.08);
+
+  @include m.sp {
+    padding: 24px 18px;
+  }
+}
+
+.form-item {
+  margin-bottom: 28px;
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: v.$main-color;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    font-family: 'Kiwi Maru', serif;
+    color: #333;
+    background-color: #fff;
+
+    border: 1px solid #d7e2ee;
+    border-radius: 12px;
+
+    box-sizing: border-box; // ←はみ出し防止（重要🔥）
+    appearance: none;
+
+    transition: all 0.25s ease; // ←なめらかに
+
+    // フォーカス時
+    &:focus {
+        outline: none;
+        border-color: #FF7F50; // アクセントカラー
+        box-shadow: 0 0 0 3px rgba(255, 127, 80, 0.15);
+        background-color: #fff;
+    }
+
+    // プレースホルダー
+    &::placeholder {
+        color: #aaa;
+        font-size: 14px;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}
+
+.required {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: #fff;
+  background-color: v.$accent-color;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
+.form-submit {
+  text-align: center;
+
+  button {
+    min-width: 220px;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-family: 'Kiwi Maru', serif;
+    color: #fff;
+    background-color: v.$main-color;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+  }
+}

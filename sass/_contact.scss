@@ -1,0 +1,33 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+.contact {
+  .contact-message {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: v.$text-size;
+    color: v.$sub-text-color;
+  }
+
+  .contact-links {
+    text-align: center;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    min-width: 260px;
+    padding: 16px 24px;
+    background-color: v.$accent-color;
+    color: v.$white;
+    // border-radius: 999px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(255, 127, 80, 0.22);
+    transition: transform v.$transition, opacity v.$transition;
+
+    &:hover {
+      opacity: 1;
+      transform: translateY(-3px);
+    }
+  }
+}
