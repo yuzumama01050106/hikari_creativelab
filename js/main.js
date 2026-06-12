@@ -4,7 +4,7 @@ $(function () {
   $(window).on('scroll', function () {
     targets.each(function () {
       const rect = $(this).offset().top;
-      const trigger = $(window).height() * 0.8;
+      const trigger = $(window).height() * 0.9;
 
       if ($(window).scrollTop() > rect - trigger) {
         $(this).addClass('show');

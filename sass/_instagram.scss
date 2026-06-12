@@ -2,7 +2,7 @@
 @use 'mixin' as m;
 
 .instagram {
-  background: linear-gradient(180deg, #ffffff 0%, #edf4fa 100%);
+  background: v.$bg-soft;
 
   .instagram-text {
     margin-bottom: 28px;
@@ -20,7 +20,7 @@
     padding: 14px 24px;
     border: 1px solid v.$main-color;
     // border-radius: 999px;
-    color: v.$main-color;
+    color: v.$bg-soft;
     background-color: transparent;
     transition: all v.$transition;
 

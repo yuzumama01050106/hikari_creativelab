@@ -48,7 +48,7 @@ li {
 
 .section {
   padding: v.$section-padding 0;
-
+  
   @include m.sp {
     padding: v.$sp-section-padding 0;
   }
